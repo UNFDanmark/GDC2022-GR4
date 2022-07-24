@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - "B\xF8ger"
   layers:
   - Default
   - TransparentFX
