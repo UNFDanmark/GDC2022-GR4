@@ -72,12 +72,11 @@ public class SelectionScript : MonoBehaviour
                     bookPos2 = null;
                 }
                 
-                
-
             }
 
             // gør bogen lysere (sæt HUE på materialet)
         }
+        
     }
 }
 
