@@ -1466,7 +1466,7 @@ PrefabInstance:
     - target: {fileID: 339220197084536026, guid: ce17c6e00d887534dbe8996b7fb2ef09,
         type: 3}
       propertyPath: m_Name
-      value: PuzzleBogVar1
+      value: Book
       objectReference: {fileID: 0}
     - target: {fileID: 339220197084536026, guid: ce17c6e00d887534dbe8996b7fb2ef09,
         type: 3}
@@ -1566,7 +1566,7 @@ PrefabInstance:
     - target: {fileID: 3809616427143438687, guid: 450039879b026924d96c5b537028d758,
         type: 3}
       propertyPath: m_Name
-      value: PuzzleBogVar2
+      value: Book2
       objectReference: {fileID: 0}
     - target: {fileID: 3809616427143438687, guid: 450039879b026924d96c5b537028d758,
         type: 3}

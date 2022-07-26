@@ -32,7 +32,7 @@ public class ZoomInClickableScript : MonoBehaviour
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask))
             {
                 Debug.Log("Did Hit");
-                SceneManager.LoadScene("ZoomInBookShelf");
+                SceneManager.LoadScene("ZoomInBookShelf 1");
             }
             
         }
