@@ -74,6 +74,8 @@ public class SelectionScript : MonoBehaviour
                 
             }
 
+            
+
             // gør bogen lysere (sæt HUE på materialet)
         }
         
