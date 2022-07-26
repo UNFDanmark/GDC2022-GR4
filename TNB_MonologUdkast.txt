@@ -1,0 +1,40 @@
+Monolog 
+
+"#" betyder at den efterkommende sætning er en beskrivelse af hvor/hvornår den understående monolog bliver brugt.
+"=" betyder at den understående monolog er en del af den samme kontekst som den overstående monolog, og kræver at spilleren klikker/interagere for at komme videre til næste stykke monolog.
+
+"..." er også monolog :)
+
+#Spiller får sms
+What was their name again?
+=
+Uhhhhh... was it Leo?
+=
+...Amy?
+=
+...Zoe??
+=
+...
+=
+Perhaps if I get up I'll remember...
+
+#Skift til væggen med bogreol
+Hmm... something feels off about the arrangement of those books
+
+#Zoom ind på kalender puzzle
+Maybe I could ask the messenger who they are...
+=
+No, that'd be suuuper embarassing
+=
+I mean, what kind of a friend would I be then? Someone who doesn't care enough about others to even learn their NAME??
+=
+...
+=
+Right, what am I doing this week?
+
+#Indsamlet alle bogstaver
+Ah, I remember now!
+=
+It's my highschool friend Sam!
+=
+I'll shoot them a text back right away
