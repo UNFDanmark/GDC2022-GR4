@@ -77,6 +77,8 @@ public class CorrectBookPosScript : MonoBehaviour
             print("Correct position!10");
         }
         
+
+
     }
     
 
