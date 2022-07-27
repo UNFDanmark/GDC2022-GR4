@@ -7,14 +7,8 @@ public class CalenderSwitch : MonoBehaviour
     public GameObject other;
     public GameObject allNotes;
     Camera cam;
-    Transform notePos1 = null;
-    Transform notePos2 = null;
-    void Start()
-    {
-        
+    Transform notePos1 = null, notePos2;
 
-        
-    }
     void Swap()
     {
         Vector3 tempPosition = notePos1.transform.position;
@@ -22,13 +16,20 @@ public class CalenderSwitch : MonoBehaviour
         notePos2.transform.position = tempPosition;
     }
 
+    void Start()
+    {
+
+        cam = GetComponent<Camera>();
+
+    }
+ 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            //Layer 3 is the book layer
-            int layerMask = LayerMask.GetMask("Book");
+            //Layer 7 is the notes layer
+            int layerMask = LayerMask.GetMask("Notes");
 
 
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
@@ -53,9 +54,7 @@ public class CalenderSwitch : MonoBehaviour
                 {
                     Swap();
 
-                    allNotes.GetComponent<CorrectBookPosScript>().checkSwap(notePos1, notePos2);
-
-
+                    allNotes.GetComponent<NotesCorrectionScript>().checkNoteSwap(notePos1, notePos2);
 
                     notePos1 = null;
                     notePos2 = null;
