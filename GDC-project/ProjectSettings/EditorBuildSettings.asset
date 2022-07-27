@@ -9,9 +9,27 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
+    path: Assets/Scenes/IntroWall.unity
+    guid: 1af65beece45d984b97888fc6e26d6a0
+  - enabled: 1
+    path: Assets/Scenes/MessageScene.unity
+    guid: 6c13e7815e945b2428bce08eef3e74cb
+  - enabled: 1
+    path: Assets/Scenes/BookScene.unity
+    guid: ec2436b6764024f4aa66b68bc752ee1a
+  - enabled: 1
     path: Assets/Scenes/WallScenes/ZoomInBookShelf 1.unity
     guid: 76eeae19593542b468a41e434066b528
   - enabled: 1
-    path: Assets/Scenes/IntroWall.unity
-    guid: 1af65beece45d984b97888fc6e26d6a0
+    path: Assets/Scenes/CalenderScene.unity
+    guid: f68534aeceb7a7646ae4979dca9a692a
+  - enabled: 1
+    path: Assets/Scenes/WallScenes/CalenderZoomScene.unity
+    guid: cd94f377df408a74f8a781dda4143f9d
+  - enabled: 1
+    path: Assets/Scenes/ClothesScene.unity
+    guid: b4a609ee77b667e4ea46f95338347180
+  - enabled: 1
+    path: Assets/Scenes/WallScenes/ClothesZoomScene.unity
+    guid: ec3b1511b334f9147bdb99a7c36e173b
   m_configObjects: {}
