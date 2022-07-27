@@ -26,37 +26,37 @@ public class NotesCorrectionScript : MonoBehaviour
 
             float noteRange = 0.001f;
 
-            if (isNote1 && noteTransform.localPosition.x == 0)
-            {
+            if (isNote1 && Mathf.Abs(noteTransform.localPosition.y - -0.001679339f) < noteRange)
+        {
                 print("Correct position!1");
             }
 
-            if (isNote2 && Mathf.Abs(noteTransform.localPosition.y - -0.04249999f) < noteRange)
+            if (isNote2 && Mathf.Abs(noteTransform.localPosition.y - 0.1285207f) < noteRange)
             {
                 print("Correct position!2");
             }
 
-            if (isNote3 && Mathf.Abs(noteTransform.localPosition.y - 0.2178f) < noteRange)
+            if (isNote3 && Mathf.Abs(noteTransform.localPosition.y - 0.08412066f) < noteRange)
             {
                 print("Correct position!3");
             }
 
-            if (isNote4 && Mathf.Abs(noteTransform.localPosition.y - 0.1695f) < noteRange)
+            if (isNote4 && Mathf.Abs(noteTransform.localPosition.y - -0.04857934f) < noteRange)
             {
                 print("Correct position!4");
             }
 
-            if (isNote5 && Mathf.Abs(noteTransform.localPosition.y - 0.255f) < noteRange)
+            if (isNote5 && Mathf.Abs(noteTransform.localPosition.y - -0.09187934f) < noteRange)
             {
                 print("Correct position5!");
             }
 
-            if (isNote6 && Mathf.Abs(noteTransform.localPosition.y - 0.1307f) < noteRange)
+            if (isNote6 && Mathf.Abs(noteTransform.localPosition.y - 0.04162067f) < noteRange)
             {
                 print("Correct position6!");
             }
 
-            if (isNote7 && Mathf.Abs(noteTransform.localPosition.y - 0.298f) < noteRange)
+            if (isNote7 && Mathf.Abs(noteTransform.localPosition.y - -0.1375793f) < noteRange)
             {
                 print("Correct position7!");
             }

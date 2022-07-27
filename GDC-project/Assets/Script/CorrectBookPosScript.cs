@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class CorrectBookPosScript : MonoBehaviour
 {
-    public GameObject[] allBooks; 
+    public GameObject[] allBooks;
+    public AudioClip bookCorrPos;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,52 +30,62 @@ public class CorrectBookPosScript : MonoBehaviour
 
         if (isBook1 && bookTransform.localPosition.x == 0)
         {
-            print("Correct position!1");
+            AudioSource soundSource = gameObject.GetComponent<AudioSource>();
+            soundSource.PlayOneShot(bookCorrPos);
         }
 
         if (isBook2 && Mathf.Abs(bookTransform.localPosition.x - -0.04249999f) < range)
         {
-            print("Correct position!2");
+            AudioSource soundSource = gameObject.GetComponent<AudioSource>();
+            soundSource.PlayOneShot(bookCorrPos);
         }
 
         if (isBook3 && Mathf.Abs(bookTransform.localPosition.x - 0.2178f) < range)
         {
-            print("Correct position!3");
+            AudioSource soundSource = gameObject.GetComponent<AudioSource>();
+            soundSource.PlayOneShot(bookCorrPos);
         }
 
         if (isBook4 && Mathf.Abs(bookTransform.localPosition.x - 0.1695f) < range)
         {
-            print("Correct position!4");
+            AudioSource soundSource = gameObject.GetComponent<AudioSource>();
+            soundSource.PlayOneShot(bookCorrPos);
         }
 
         if (isBook5 && Mathf.Abs(bookTransform.localPosition.x - 0.255f) < range)
         {
-            print("Correct position5!");
+            AudioSource soundSource = gameObject.GetComponent<AudioSource>();
+            soundSource.PlayOneShot(bookCorrPos);
         }
 
         if (isBook6 && Mathf.Abs(bookTransform.localPosition.x - 0.1307f) < range)
         {
-            print("Correct position6!");
+            AudioSource soundSource = gameObject.GetComponent<AudioSource>();
+            soundSource.PlayOneShot(bookCorrPos);
         }
 
         if (isBook7 && Mathf.Abs(bookTransform.localPosition.x - 0.298f) < range)
         {
-            print("Correct position7!");
+            AudioSource soundSource = gameObject.GetComponent<AudioSource>();
+            soundSource.PlayOneShot(bookCorrPos);
         }
 
         if (isBook8 && Mathf.Abs(bookTransform.localPosition.x - 0.0826f) < range)
         {
-            print("Correct position!8");
+            AudioSource soundSource = gameObject.GetComponent<AudioSource>();
+            soundSource.PlayOneShot(bookCorrPos);
         }
 
         if (isBook9 && Mathf.Abs(bookTransform.localPosition.x - 0.0371f) < range)
         {
-            print("Correct position!9");
+            AudioSource soundSource = gameObject.GetComponent<AudioSource>();
+            soundSource.PlayOneShot(bookCorrPos);
         }
 
         if (isBook10 && Mathf.Abs(bookTransform.localPosition.x - -0.0913f) < range)
         {
-            print("Correct position!10");
+            AudioSource soundSource = gameObject.GetComponent<AudioSource>();
+            soundSource.PlayOneShot(bookCorrPos);
         }
         
 
