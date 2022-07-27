@@ -12,6 +12,8 @@ public class SelectionScript : MonoBehaviour
     public GameObject allBooks;
     void Swap()
     {
+        
+        
         Vector3 tempPosition = bookPos1.transform.position;
         bookPos1.transform.position = bookPos2.transform.position;
         bookPos2.transform.position = tempPosition;
