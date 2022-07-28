@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - "B\xF8ger"
+  - Score1
+  - Score2
+  - Score3
   layers:
   - Default
   - TransparentFX

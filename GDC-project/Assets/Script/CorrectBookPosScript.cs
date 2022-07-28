@@ -182,7 +182,8 @@ public class CorrectBookPosScript : MonoBehaviour
             AudioSource soundSource = gameObject.GetComponent<AudioSource>();
             soundSource.PlayOneShot(PuzzleSolved);
 
-
+            GameObject scoreS = GameObject.FindGameObjectWithTag("Score1");
+            scoreS.GetComponent<TMPro.TextMeshProUGUI>().text = "S";
         }
         
     }
