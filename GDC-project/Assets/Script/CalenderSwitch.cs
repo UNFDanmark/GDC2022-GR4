@@ -54,7 +54,7 @@ public class CalenderSwitch : MonoBehaviour
                 {
                     Swap();
 
-                    allNotes.GetComponent<NotesCorrectionScript>().checkNoteSwap(notePos1, notePos2);
+                    allNotes.GetComponent<NotesCorrectionScript>().checkSwap(notePos1, notePos2);
 
                     notePos1 = null;
                     notePos2 = null;

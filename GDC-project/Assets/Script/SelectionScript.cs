@@ -56,9 +56,7 @@ public class SelectionScript : MonoBehaviour
                 {
                     Swap();
 
-                    allBooks.GetComponent<CorrectBookPosScript>().checkSwap(bookPos1, bookPos2);
-
-                    
+                    gameObject.GetComponent<CorrectBookPosScript>().checkSwap(bookPos1, bookPos2);
 
                     bookPos1 = null;
                     bookPos2 = null;
