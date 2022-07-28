@@ -181,6 +181,8 @@ public class CorrectBookPosScript : MonoBehaviour
         {
             AudioSource soundSource = gameObject.GetComponent<AudioSource>();
             soundSource.PlayOneShot(PuzzleSolved);
+
+
         }
         
     }
