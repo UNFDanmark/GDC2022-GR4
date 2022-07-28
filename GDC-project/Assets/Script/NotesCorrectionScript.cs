@@ -10,7 +10,7 @@ public class NotesCorrectionScript : MonoBehaviour
     public AudioClip bookCorrPos;
     public AudioClip PuzzleSolved;
 
-    public bool[] bookPlacedCorrectly;
+    public bool[] notePlacedCorrectly;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +31,7 @@ public class NotesCorrectionScript : MonoBehaviour
 
         float noteRange = 0.001f;
 
-        if (isNote1 && Mathf.Abs(noteTransform.localPosition.y - -0.001679339f) < noteRange)
+        if (isNote1 && Mathf.Abs(noteTransform.localPosition.y - 0.003f) < noteRange)
         {
             AudioSource soundSource = gameObject.GetComponent<AudioSource>();
             soundSource.PlayOneShot(bookCorrPos);
@@ -41,7 +41,7 @@ public class NotesCorrectionScript : MonoBehaviour
         {
             return -1;
         }
-        if (isNote2 && Mathf.Abs(noteTransform.localPosition.y - 0.1285207f) < noteRange)
+        if (isNote2 && Mathf.Abs(noteTransform.localPosition.y - 0.129f) < noteRange)
         {
             
             AudioSource soundSource = gameObject.GetComponent<AudioSource>();
@@ -53,7 +53,7 @@ public class NotesCorrectionScript : MonoBehaviour
             return -2;
         }
 
-        if (isNote3 && Mathf.Abs(noteTransform.localPosition.y - 0.08412066f) < noteRange)
+        if (isNote3 && Mathf.Abs(noteTransform.localPosition.y - 0.083f) < noteRange)
         {
             AudioSource soundSource = gameObject.GetComponent<AudioSource>();
             soundSource.PlayOneShot(bookCorrPos);
@@ -64,7 +64,7 @@ public class NotesCorrectionScript : MonoBehaviour
             return -3;
         }
 
-        if (isNote4 && Mathf.Abs(noteTransform.localPosition.y - -0.04857934f) < noteRange)
+        if (isNote4 && Mathf.Abs(noteTransform.localPosition.y - -0.045f) < noteRange)
         {
             AudioSource soundSource = gameObject.GetComponent<AudioSource>();
             soundSource.PlayOneShot(bookCorrPos);
@@ -75,7 +75,7 @@ public class NotesCorrectionScript : MonoBehaviour
             return -4;
         }
 
-        if (isNote5 && Mathf.Abs(noteTransform.localPosition.y - -0.09187934f) < noteRange)
+        if (isNote5 && Mathf.Abs(noteTransform.localPosition.y - -0.091f) < noteRange)
         {
             AudioSource soundSource = gameObject.GetComponent<AudioSource>();
             soundSource.PlayOneShot(bookCorrPos);
@@ -86,7 +86,7 @@ public class NotesCorrectionScript : MonoBehaviour
             return -5;
         }
 
-        if (isNote6 && Mathf.Abs(noteTransform.localPosition.y - 0.04162067f) < noteRange)
+        if (isNote6 && Mathf.Abs(noteTransform.localPosition.y - 0.04f) < noteRange)
         {
             AudioSource soundSource = gameObject.GetComponent<AudioSource>();
             soundSource.PlayOneShot(bookCorrPos);
@@ -97,7 +97,7 @@ public class NotesCorrectionScript : MonoBehaviour
             return -6;
         }
 
-        if (isNote7 && Mathf.Abs(noteTransform.localPosition.y - -0.1375793f) < noteRange)
+        if (isNote7 && Mathf.Abs(noteTransform.localPosition.y - -0.135f) < noteRange)
         {
             AudioSource soundSource = gameObject.GetComponent<AudioSource>();
             soundSource.PlayOneShot(bookCorrPos);
@@ -118,38 +118,41 @@ public class NotesCorrectionScript : MonoBehaviour
     public void checkSwap(Transform noteTransform1, Transform noteTransform2)
     {
 
-        int whichBook1 = checkNote(noteTransform1);
-        int whichBook2 = checkNote(noteTransform2);
+        int whichNote1 = checkNote(noteTransform1);
+        int whichNote2 = checkNote(noteTransform2);
 
-        if (whichBook1 != 0)
+        if (whichNote1 != 0)
         {
-            int index = Math.Abs(whichBook1) - 1;
-            if (whichBook1 > 0)
+            int index = Math.Abs(whichNote1) - 1;
+            if (whichNote1 > 0)
             {
-                bookPlacedCorrectly[index] = true;
+                notePlacedCorrectly[index] = true;
             }
             else
             {
-                bookPlacedCorrectly[index] = false;
+                notePlacedCorrectly[index] = false;
             }
 
         }
-        if (whichBook2 != 0)
+        if (whichNote2 != 0)
         {
-            int index = Math.Abs(whichBook2) - 1;
-            if (whichBook2 > 0)
+            int index = Math.Abs(whichNote2) - 1;
+            if (whichNote2 > 0)
             {
-                bookPlacedCorrectly[index] = true;
+                notePlacedCorrectly[index] = true;
             }
             else
             {
-                bookPlacedCorrectly[index] = false;
+                notePlacedCorrectly[index] = false;
             }
         }
-        if (bookPlacedCorrectly[0] && bookPlacedCorrectly[1] && bookPlacedCorrectly[2] && bookPlacedCorrectly[3] && bookPlacedCorrectly[4] && bookPlacedCorrectly[5] && bookPlacedCorrectly[6] && bookPlacedCorrectly[7] && bookPlacedCorrectly[8] && bookPlacedCorrectly[9])
+        if (notePlacedCorrectly[0] && notePlacedCorrectly[1] && notePlacedCorrectly[2] && notePlacedCorrectly[3] && notePlacedCorrectly[4] && notePlacedCorrectly[5] && notePlacedCorrectly[6])
         {
             AudioSource soundSource = gameObject.GetComponent<AudioSource>();
             soundSource.PlayOneShot(PuzzleSolved);
+
+            GameObject scoreS = GameObject.FindGameObjectWithTag("Score2");
+            scoreS.GetComponent<TMPro.TextMeshProUGUI>().text = "A";
         }
 
     

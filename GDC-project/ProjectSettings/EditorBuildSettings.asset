@@ -33,6 +33,6 @@ EditorBuildSettings:
     path: Assets/Scenes/ClothesScene.unity
     guid: b4a609ee77b667e4ea46f95338347180
   - enabled: 1
-    path: Assets/Scenes/WallScenes/ClothesZoomScene.unity
-    guid: ec3b1511b334f9147bdb99a7c36e173b
+    path: Assets/Scenes/EndScene.unity
+    guid: 185414db14227494bb4e63806e0128e4
   m_configObjects: {}
