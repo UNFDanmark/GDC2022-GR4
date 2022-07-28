@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
-public class ZoomInClickableScript : MonoBehaviour
+public class ZoomCalenderScript : MonoBehaviour
 {
     Camera cam;
-    // Start is called before the first frame update
+
     void Start()
     {
-        
+
         cam = GetComponent<Camera>();
     }
 
@@ -21,7 +20,7 @@ public class ZoomInClickableScript : MonoBehaviour
         {
             //Layer 6 is the book layer
             int layerMask = LayerMask.GetMask("Clickable");
-            
+
 
 
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
@@ -33,10 +32,11 @@ public class ZoomInClickableScript : MonoBehaviour
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask))
             {
                 Debug.Log("Did Hit");
-                SceneManager.LoadScene("ZoomInBookShelf 1");
-               
+                SceneManager.LoadScene("CalenderZoomScene");
+
             }
-            
         }
+
+
     }
 }
